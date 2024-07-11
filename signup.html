@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character encoding for the HTML document to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Ensures proper scaling on different devices by setting the viewport width to the device width and the initial scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage displayed in the browser tab -->
+    <title>User Signup</title>
+    <!-- Link to the external CSS file for styling the signup page -->
+    <link rel="stylesheet" href="css/signup-styles.css">
+</head>
+<body>
+    <!-- Container for the signup form, providing a styled box for the form elements -->
+    <div class="container">
+        <!-- Header for the signup form -->
+        <h2>User Signup</h2>
+        <!-- Form element for user signup, identified by its ID for JavaScript targeting and using a custom submit action -->
+        <form id="signupForm" class="form" method="POST" action="javascript:void(0);">
+            <!-- Form group for the username input, ensuring inputs are grouped with their labels and error messages -->
+            <div class="form-group">
+                <!-- Label for the username input field -->
+                <label for="username">Username:</label>
+                <!-- Text input field for the username, which is required to be filled out -->
+                <input type="text" id="username" name="username" required>
+                <!-- Div element for displaying username-related error messages -->
+                <div class="error" id="usernameError"></div>
+            </div>
+            <!-- Form group for the email input -->
+            <div class="form-group">
+                <!-- Label for the email input field -->
+                <label for="email">Email:</label>
+                <!-- Email input field, which is required to be filled out -->
+                <input type="email" id="email" name="email" required>
+                <!-- Div element for displaying email-related error messages -->
+                <div class="error" id="emailError"></div>
+            </div>
+            <!-- Form group for the password input -->
+            <div class="form-group">
+                <!-- Label for the password input field -->
+                <label for="password">Password:</label>
+                <!-- Password input field, which is required to be filled out -->
+                <input type="password" id="password" name="password" required>
+                <!-- Div element for displaying password-related error messages -->
+                <div class="error" id="passwordError"></div>
+            </div>
+            <!-- Form group for the contact number input -->
+            <div class="form-group">
+                <!-- Label for the contact number input field -->
+                <label for="contactNumber">Contact Number:</label>
+                <!-- Text input field for the contact number, which is required to be filled out -->
+                <input type="text" id="contactNumber" name="contactNumber" required>
+                <!-- Div element for displaying contact number-related error messages -->
+                <div class="error" id="contactNumberError"></div>
+            </div>
+            <!-- Form group for the state input -->
+            <div class="form-group">
+                <!-- Label for the state input field -->
+                <label for="state">State:</label>
+                <!-- Text input field for the state, which is required to be filled out -->
+                <input type="text" id="state" name="state" required>
+            </div>
+            <!-- Button to submit the signup form -->
+            <button type="submit">Signup</button>
+            <!-- Div element for displaying general signup messages (e.g., success or error messages) -->
+            <div id="signupMessage"></div>
+        </form>
+    </div>
+
+    <!-- Link to the external JavaScript file for handling signup form submission and validation -->
+    <script src="js/signup-scripts.js"></script>
+</body>
+</html>

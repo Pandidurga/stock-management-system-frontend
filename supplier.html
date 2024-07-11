@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Supplier Management</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/supplier-styles.css">
+</head>
+<body>
+    <!-- Page Title -->
+    <h1>Suppliers</h1>
+
+    <!-- Container for Suppliers -->
+    <div class="container">
+        <!-- Button to Add New Supplier -->
+        <button id="addButton">Add New Supplier</button>
+        
+        <!-- Table to Display Suppliers -->
+        <table>
+            <thead>
+                <!-- Table Header -->
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Contact Number</th>
+                    <th>State</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="suppliersList">
+                <!-- Suppliers will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal for Adding New Supplier -->
+    <div id="addSupplierModal" class="modal">
+        <div class="modal-content">
+            <!-- Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Title -->
+            <h2>Add New Supplier</h2>
+            
+            <!-- Form for Adding New Supplier -->
+            <form id="addSupplierForm">
+                <label for="supplierName">Name:</label>
+                <input type="text" id="supplierName" required>
+                <label for="contactNumber">Contact Number:</label>
+                <input type="text" id="contactNumber">
+                <label for="state">State:</label>
+                <input type="text" id="state">
+                <button type="submit">Add Supplier</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Editing Supplier -->
+    <div id="editSupplierModal" class="modal">
+        <div class="modal-content">
+            <!-- Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Title -->
+            <h2>Edit Supplier</h2>
+            
+            <!-- Form for Editing Supplier -->
+            <form id="editSupplierForm">
+                <!-- Hidden Field for Supplier ID -->
+                <input type="hidden" id="editSupplierId">
+                <label for="editSupplierName">Name:</label>
+                <input type="text" id="editSupplierName" required>
+                <label for="editContactNumber">Contact Number:</label>
+                <input type="text" id="editContactNumber">
+                <label for="editState">State:</label>
+                <input type="text" id="editState">
+                <button type="submit">Update Supplier</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="js/supplier-scripts.js"></script>
+
+</body>
+</html>

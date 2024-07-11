@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character encoding for the HTML document to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Ensures proper scaling on different devices by setting the viewport width to the device width and the initial scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage displayed in the browser tab -->
+    <title>Login</title>
+    <!-- Link to the external CSS file for styling the login page -->
+    <link rel="stylesheet" href="css/login-styles.css">
+</head>
+<body>
+    <!-- Container for the login form, providing a styled box for the form elements -->
+    <div class="login-container">
+        <!-- Header for the login form -->
+        <h2>Login</h2>
+        <!-- Form element for user login, identified by its ID for JavaScript targeting -->
+        <form id="loginForm">
+            <!-- Form group for the email input, ensuring inputs are grouped with their labels and error messages -->
+            <div class="form-group">
+                <!-- Label for the email input field -->
+                <label for="email">Email</label>
+                <!-- Email input field, which is required to be filled out -->
+                <input type="email" id="email" name="email" required>
+                <!-- Span element for displaying email-related error messages -->
+                <span class="error" id="emailError"></span>
+            </div>
+            <!-- Form group for the password input -->
+            <div class="form-group">
+                <!-- Label for the password input field -->
+                <label for="password">Password</label>
+                <!-- Password input field, which is required to be filled out -->
+                <input type="password" id="password" name="password" required>
+                <!-- Span element for displaying password-related error messages -->
+                <span class="error" id="passwordError"></span>
+            </div>
+            <!-- Button to submit the login form -->
+            <button type="submit">Login</button>
+            <!-- Span element for displaying general login messages (e.g., success or error messages) -->
+            <span id="loginMessage"></span>
+        </form>
+        <!-- Paragraph with a link to the signup page for users who don't have an account -->
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+    <!-- Link to the external JavaScript file for handling login form submission and validation -->
+    <script src="js/login-scripts.js"></script>
+</body>
+</html>

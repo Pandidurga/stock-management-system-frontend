@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define character set for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <title>Buying History</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="css/buying-history-styles.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body>
+    <div class="container"> <!-- Main container for the page content -->
+        <h1 class="centered">Buying History</h1> <!-- Heading centered on the page -->
+        <div id="salesTableContainer"> <!-- Container for the sales table -->
+            <table id="salesTable"> <!-- Sales table with ID for styling and scripting -->
+                <thead> <!-- Table header section -->
+                    <tr> <!-- Table header row -->
+                        <th>Sale ID</th> <!-- Column header for Sale ID -->
+                        <th>Product Name</th> <!-- Column header for Product Name -->
+                        <th>Quantity</th> <!-- Column header for Quantity -->
+                        <th>Unit Price</th> <!-- Column header for Unit Price -->
+                        <th>CGST</th> <!-- Column header for CGST -->
+                        <th>SGST</th> <!-- Column header for SGST -->
+                        <th>IGST</th> <!-- Column header for IGST -->
+                        <th>Net Amount</th> <!-- Column header for Net Amount -->
+                        <th>Gross Amount</th> <!-- Column header for Gross Amount -->
+                        <th>Sale Date</th> <!-- Column header for Sale Date -->
+                    </tr>
+                </thead>
+                <tbody id="salesTableBody"> <!-- Table body section for sales data -->
+                    <!-- Sales data rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/buying-history-scripts.js"></script> <!-- Link to external JavaScript file for scripting -->
+</body>
+</html>

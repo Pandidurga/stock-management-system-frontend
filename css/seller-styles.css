@@ -1,0 +1,64 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Set default font family */
+    background-color: #f0f0f0; /* Light gray background color */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Container styles */
+.container {
+    background-color: #ffffff; /* White background for container */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center; /* Center align text */
+    max-width: 600px; /* Maximum width of the container */
+    width: 90%; /* Responsive width */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24px; /* Heading font size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333333; /* Dark gray heading color */
+}
+
+/* Button styles */
+button {
+    display: block; /* Display as block element */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Maximum width */
+    padding: 12px 20px; /* Padding inside the button */
+    margin: 10px auto; /* Center horizontally with vertical margin */
+    background-color: #4CAF50; /* Green background color */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Button text size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Decrease padding on smaller screens */
+    }
+    button {
+        font-size: 14px; /* Decrease font size on smaller screens */
+    }
+}

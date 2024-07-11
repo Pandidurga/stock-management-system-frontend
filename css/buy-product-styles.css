@@ -1,0 +1,73 @@
+/* Add some basic styling */
+
+/* Reset default margin and padding for all elements */
+body {
+    font-family: Arial, sans-serif;  /* Set font family for the entire page */
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+    background-color: #f4f4f4;  /* Set background color for the body */
+}
+
+/* Container styles */
+.container {
+    width: 80%;  /* Set container width to 80% of the viewport */
+    margin: auto;  /* Center the container horizontally */
+    overflow: hidden;  /* Hide any overflowing content */
+    padding: 2em 0;  /* Add padding to the top and bottom of the container */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;  /* Center-align heading text */
+    margin-bottom: 1em;  /* Add margin at the bottom of the heading */
+}
+
+/* Styles for the search container */
+.search-container {
+    text-align: center;  /* Center-align content inside the search container */
+    margin-bottom: 1em;  /* Add margin at the bottom of the search container */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="number"] {
+    padding: 0.5em;  /* Add padding inside text and number input fields */
+    margin: 0.5em;  /* Add margin around text and number input fields */
+    width: 200px;  /* Set width of input fields */
+}
+
+/* Table styles */
+table {
+    width: 100%;  /* Set table width to 100% of its container */
+    border-collapse: collapse;  /* Collapse borders between table cells */
+}
+
+/* Table header and data cell styles */
+th, td {
+    border: 1px solid #dddddd;  /* Add 1px solid border around table cells */
+    text-align: left;  /* Align text to the left within table cells */
+    padding: 8px;  /* Add padding inside table cells */
+}
+
+/* Table header specific styles */
+th {
+    background-color: #4caf50;  /* Set green background color for table headers */
+    color: white;  /* Set white text color for table headers */
+}
+
+/* Alternate row background color in the table */
+tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Light gray background for even rows */
+}
+
+/* Styling for the error message container */
+.error-message {
+    margin-top: 20px; /* Add some space above the message */
+    padding: 10px; /* Add padding inside the message box */
+    border-radius: 5px; /* Rounded corners for the message box */
+    font-weight: bold; /* Bold text for the message */
+    text-align: center; /* Center-align the text */
+}
+
+
+

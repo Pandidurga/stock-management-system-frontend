@@ -1,0 +1,52 @@
+/* Container styling */
+.container {
+    max-width: 400px; /* Sets the maximum width of the container to 400px */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds 20px padding inside the container */
+    border: 1px solid #ccc; /* Adds a light gray border around the container */
+    border-radius: 5px; /* Rounds the corners of the border */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Adds space below each form group */
+}
+
+/* Label styling */
+label {
+    display: block; /* Makes the label a block element */
+    margin-bottom: 5px; /* Adds space below the label */
+}
+
+/* Input field styling for text, email, and password fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Makes the input field take up the full width of the container */
+    padding: 8px; /* Adds 8px padding inside the input field */
+    font-size: 16px; /* Sets the font size to 16px */
+    border: 1px solid #ccc; /* Adds a light gray border around the input field */
+    border-radius: 4px; /* Rounds the corners of the border */
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Sets the background color to a shade of green */
+    color: white; /* Sets the text color to white */
+    padding: 10px 20px; /* Adds padding inside the button */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered over the button */
+    border-radius: 4px; /* Rounds the corners of the button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Changes the background color when hovered over */
+}
+
+/* Error message styling */
+.error {
+    color: red; /* Sets the text color to red */
+    font-size: 14px; /* Sets the font size to 14px */
+    margin-top: 5px; /* Adds space above the error message */
+}

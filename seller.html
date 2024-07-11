@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Seller Page</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="css/seller-styles.css">
+</head>
+<body>
+    <!-- Container div for the page content -->
+    <div class="container">
+        <!-- Heading welcoming the seller -->
+        <h1>Welcome, Seller</h1>
+        <!-- Button to redirect to 'product-management.html' when clicked -->
+        <button id="productManagementBtn" onclick="window.location.href = 'product-management.html';">Product Management</button>
+        <!-- Button to redirect to 'supplier-management.html' when clicked -->
+        <button id="supplierManagementBtn" onclick="window.location.href = 'supplier-management.html';">Supplier Management</button>
+        <!-- Button to redirect to 'purchase-management.html' when clicked -->
+        <button id="purchaseManagementBtn" onclick="window.location.href = 'purchase-management.html';">Purchase Management</button>
+        <!-- Button to redirect to 'stock-management.html' when clicked -->
+        <button id="stockManagementBtn" onclick="window.location.href = 'stock-management.html';">Stock Management</button>
+        <!-- Button to redirect to 'view-sales.html' when clicked -->
+        <button id="viewSalesBtn" onclick="window.location.href = 'view-sales.html';">View Sales</button>
+        <!-- Container for dynamic content, initially empty -->
+        <div id="content"></div>
+    </div>
+    <!-- JavaScript file for additional functionality -->
+    <script src="js/seller-scripts.js"></script>
+</body>
+</html>

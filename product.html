@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Product Management</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/product-styles.css">
+</head>
+<body>
+    <!-- Page Title -->
+    <h1>Products</h1>
+
+    <!-- Container for Products -->
+    <div class="container">
+        <!-- Button to Add New Product -->
+        <button id="addButton">Add New Product</button>
+        
+        <!-- Table to Display Products -->
+        <table>
+            <thead>
+                <!-- Table Header -->
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Cost Price</th>
+                    <th>Selling Price</th>
+                    <th>CGST</th>
+                    <th>SGST</th>
+                    <th>IGST</th>
+                    <th>Supplier</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productsList">
+                <!-- Products will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal for Adding New Product -->
+    <div id="addProductModal" class="modal">
+        <div class="modal-content">
+            <!-- Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Title -->
+            <h2>Add New Product</h2>
+            
+            <!-- Form for Adding New Product -->
+            <form id="addProductForm">
+                <!-- Error Message Div -->
+                <div id="addErrorMessage" class="error-message"></div>
+                
+                <label for="productName">Name:</label>
+                <input type="text" id="productName" required>
+                <label for="costPrice">Cost Price:</label>
+                <input type="number" id="costPrice" step="0.01" required>
+                <label for="sellingPrice">Selling Price:</label>
+                <input type="number" id="sellingPrice" step="0.01" required>
+                <label for="cgst">CGST (%):</label>
+                <input type="number" id="cgst" step="0.01" required>
+                <label for="sgst">SGST (%):</label>
+                <input type="number" id="sgst" step="0.01" required>
+                <label for="igst">IGST (%):</label>
+                <input type="number" id="igst" step="0.01" required>
+                <label for="supplierId">Supplier ID:</label>
+                <input type="number" id="supplierId" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <!-- Error Message Element -->
+            <div id="errorMessage" class="error-message"></div>
+
+        </div>
+    </div>
+
+    <!-- Modal for Editing Product -->
+    <div id="editProductModal" class="modal">
+        <div class="modal-content">
+            <!-- Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Title -->
+            <h2>Edit Product</h2>
+            
+            <!-- Form for Editing Product -->
+            <form id="editProductForm">
+                <!-- Error Message Div -->
+                <div id="editErrorMessage" class="error-message"></div>
+                
+                <!-- Hidden Field for Product ID -->
+                <input type="hidden" id="editProductId">
+                <label for="editProductName">Name:</label>
+                <input type="text" id="editProductName" required>
+                <label for="editCostPrice">Cost Price:</label>
+                <input type="number" id="editCostPrice" step="0.01" required>
+                <label for="editSellingPrice">Selling Price:</label>
+                <input type="number" id="editSellingPrice" step="0.01" required>
+                <label for="editCgst">CGST (%):</label>
+                <input type="number" id="editCgst" step="0.01" required>
+                <label for="editSgst">SGST (%):</label>
+                <input type="number" id="editSgst" step="0.01" required>
+                <label for="editIgst">IGST (%):</label>
+                <input type="number" id="editIgst" step="0.01" required>
+                <label for="editSupplierId">Supplier ID:</label>
+                <input type="number" id="editSupplierId" required>
+                <button type="submit">Update Product</button>
+            </form>
+           <!-- Error Message Element -->
+           <div id="editErrorMessage" class="error-message"></div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="js/product-scripts.js"></script>
+
+</body>
+</html>

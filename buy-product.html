@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Product Search</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="css/buy-product-styles.css">
+</head>
+<body>
+    <!-- Container div for the page content -->
+    <div class="container">
+        <!-- Heading for the page -->
+        <h1>Product List</h1>
+        <!-- Container for search inputs -->
+        <div class="search-container">
+            <!-- Input for searching products by name -->
+            <input type="text" id="searchBox" placeholder="Search by name..." oninput="searchProducts()">
+            <!-- Input for filtering by minimum price -->
+            <input type="number" id="minPrice" placeholder="Min Price" oninput="searchProducts()">
+            <!-- Input for filtering by maximum price -->
+            <input type="number" id="maxPrice" placeholder="Max Price" oninput="searchProducts()">
+        </div>
+        <!-- Div for displaying error messages -->
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        <!-- Table to display products -->
+        <table>
+            <!-- Table header section -->
+            <thead>
+                <tr>
+                    <!-- Column headers -->
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>CGST (%)</th>
+                    <th>SGST (%)</th>
+                    <th>IGST (%)</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <!-- Table body section for dynamic content -->
+            <tbody id="productTableBody">
+                <!-- Dynamic content will be injected here -->
+            </tbody>
+        </table>
+    </div>
+    <!-- JavaScript file for additional functionality -->
+    <script src="js/buy-product-scripts.js"></script>
+</body>
+</html>
